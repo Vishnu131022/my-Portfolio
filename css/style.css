@@ -6545,6 +6545,79 @@ h6 {
     padding: 0px 0px 70px;
   }
 }
+/* experience css */
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+.container {
+  margin-top: 50px;
+}
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.timeline-card {
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+  width: 45%;
+}
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.2);
+}
+.left {
+  left: 0;
+}
+.right {
+  left: 55%;
+}
+.timeline-card h4 {
+  color: #007bff;
+}
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background: #00c6ff;
+  border-radius: 50%;
+  left: -8px;
+}
+.right::before {
+  left: auto;
+  right: -8px;
+}
+@media screen and (max-width: 768px) {
+  .timeline::after {
+      left: 20px;
+  }
+  .timeline-card {
+      width: 100%;
+      left: 0;
+      margin-left: 40px;
+  }
+  .timeline-card::before {
+      left: -30px;
+  }
+}
 
 /* line 19, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
 .blog_part .blog_right_sidebar .widget_title {
